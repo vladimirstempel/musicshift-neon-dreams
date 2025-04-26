@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -74,44 +73,10 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        "glow": {
-          "0%, 100%": { 
-            textShadow: "0 0 10px hsl(var(--primary)), 0 0 20px hsl(var(--primary))" 
-          },
-          "50%": { 
-            textShadow: "0 0 20px hsl(var(--primary)), 0 0 30px hsl(var(--primary))" 
-          }
-        },
-        "float": {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" }
-        },
-        "gradient-background": {
-          "0%": { backgroundPosition: "0% 50%" },
-          "50%": { backgroundPosition: "100% 50%" },
-          "100%": { backgroundPosition: "0% 50%" }
-        },
-        "pulse-glow": {
-          "0%, 100%": { 
-            boxShadow: "0 0 5px rgba(215, 70, 239, 0.5), 0 0 10px rgba(215, 70, 239, 0.2)"
-          },
-          "50%": { 
-            boxShadow: "0 0 20px rgba(215, 70, 239, 0.8), 0 0 30px rgba(215, 70, 239, 0.5)"
-          }
-        },
-        "logo-spin": {
-          from: { transform: "rotate(0deg)" },
-          to: { transform: "rotate(360deg)" }
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "glow": "glow 2s ease-in-out infinite",
-        "float": "float 6s ease-in-out infinite",
-        "gradient-background": "gradient-background 15s ease infinite",
-        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
-        "logo-spin": "logo-spin 10s linear infinite",
       },
       backgroundImage: {
         "synthwave-grid": "linear-gradient(180deg, rgba(13, 12, 34, 0) 0%, #0d0c22 100%), repeating-linear-gradient(90deg, rgba(139, 92, 246, 0.07) 0px, rgba(139, 92, 246, 0.07) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, rgba(139, 92, 246, 0.07) 0px, rgba(139, 92, 246, 0.07) 1px, transparent 1px, transparent 60px), linear-gradient(0deg, rgba(13, 12, 34, 0) 0%, #0d0c22 100%)",

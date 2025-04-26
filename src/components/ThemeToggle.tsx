@@ -20,9 +20,9 @@ export function ThemeToggle() {
       className="hover:bg-muted transition-colors"
     >
       {theme === "dark" ? (
-        <Sun className="h-5 w-5 text-neon-cyan transition-colors" />
+        <Sun className="h-5 w-5 text-foreground" />
       ) : (
-        <Moon className="h-5 w-5 transition-colors" />
+        <Moon className="h-5 w-5 text-foreground" />
       )}
       <span className="sr-only">Toggle theme</span>
     </Button>
