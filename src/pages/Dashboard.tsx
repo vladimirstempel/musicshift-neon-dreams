@@ -1,10 +1,13 @@
-
 import React from "react";
 import { SideDrawer } from "@/components/SideDrawer";
 import { TopBar } from "@/components/TopBar";
 import { PlatformCard } from "@/components/PlatformCard";
 import { MigrationProgress } from "@/components/MigrationProgress";
 import { LibraryStats } from "@/components/LibraryStats";
+import { StatsCard } from "@/components/StatsCard";
+import { RecentActivity } from "@/components/RecentActivity";
+import { QuickActions } from "@/components/QuickActions";
+import { Music, PlayCircle, Users } from "lucide-react";
 
 const platformsData = [
   { 
@@ -42,7 +45,28 @@ const Dashboard = () => {
         <TopBar />
         
         <div className="flex-1 p-6 overflow-y-auto">
-          <div className="max-w-7xl mx-auto space-y-8">
+          <div className="max-w-7xl mx-auto space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <StatsCard
+                title="Total Songs"
+                value="2,547"
+                description="Across all platforms"
+                icon={<Music className="h-4 w-4" />}
+              />
+              <StatsCard
+                title="Active Transfers"
+                value="3"
+                description="In progress"
+                icon={<PlayCircle className="h-4 w-4" />}
+              />
+              <StatsCard
+                title="Connected Users"
+                value="12"
+                description="Shared libraries"
+                icon={<Users className="h-4 w-4" />}
+              />
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {platformsData.map((platform) => (
                 <PlatformCard 
@@ -66,8 +90,12 @@ const Dashboard = () => {
                 playlistsTotal={28}
                 playlistsCopied={19}
               />
-              
               <LibraryStats />
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <QuickActions />
+              <RecentActivity />
             </div>
           </div>
         </div>
