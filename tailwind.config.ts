@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -51,6 +52,33 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))"
+        },
+        // Material 3 color system
+        md: {
+          sys: {
+            primary: "#8B5CF6",
+            onPrimary: "#FFFFFF",
+            primaryContainer: "#F3E8FF",
+            onPrimaryContainer: "#2A1B4A",
+            secondary: "#D946EF",
+            onSecondary: "#FFFFFF",
+            secondaryContainer: "#FCE7FE",
+            onSecondaryContainer: "#3B1444",
+            tertiary: "#1EAEDB",
+            onTertiary: "#FFFFFF",
+            tertiaryContainer: "#E5F6FF",
+            onTertiaryContainer: "#0A3847",
+            error: "#DC2626",
+            onError: "#FFFFFF",
+            errorContainer: "#FFDAD6",
+            onErrorContainer: "#410002",
+            surface: "#221F26",
+            onSurface: "#E6E1E5",
+            surfaceVariant: "#2A2730",
+            onSurfaceVariant: "#CAC4D0",
+            outline: "#403E43",
+            outlineVariant: "#49454F"
+          }
         },
         neon: {
           pink: "#D946EF",
